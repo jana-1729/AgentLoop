@@ -160,11 +160,11 @@ export default function Home() {
         <Hero />
         <LogosBar />
 
-        <section id="features" className="relative py-24 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none">
+        <section id="features" className="relative py-16 sm:py-24 overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none z-0">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[680px] h-[680px] rounded-full bg-primary/10 blur-[160px]" />
           </div>
-          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div {...fadeUp} className="text-center">
               <p className="text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
                 Core capabilities
@@ -186,7 +186,7 @@ export default function Home() {
                   <motion.div
                     key={feature.title}
                     {...fadeUp}
-                    className="group gradient-border rounded-2xl"
+                    className="group gradient-border rounded-2xl cursor-pointer"
                   >
                     <div className="h-full rounded-2xl bg-card/80 backdrop-blur-sm p-6 transition-transform duration-300 group-hover:-translate-y-1">
                       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
@@ -206,8 +206,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="studio" className="py-24">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
+        <section id="studio" className="py-16 sm:py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-10 sm:gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
             <motion.div {...fadeUp}>
               <p className="text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
                 AgentLoop Studio
@@ -252,7 +252,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div {...fadeUp} className="relative">
-              <div className="absolute -top-10 -right-8 h-40 w-40 rounded-full bg-amber-300/20 blur-[80px]" />
+              <div className="absolute -top-10 -right-8 h-40 w-40 rounded-full bg-amber-300/20 blur-[80px] z-0 pointer-events-none" />
               <div className="gradient-border rounded-3xl">
                 <div className="rounded-3xl bg-card/90 p-6 backdrop-blur-sm">
                   <div className="flex items-center justify-between">
@@ -305,7 +305,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="integrations" className="py-24 bg-secondary/40">
+        <section id="integrations" className="py-16 sm:py-24 bg-secondary/40">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div {...fadeUp} className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
               <div>
@@ -320,22 +320,22 @@ export default function Home() {
                   your own. Keep everything discoverable for your customers.
                 </p>
               </div>
-              <Button className="rounded-full px-6">Browse integration hub</Button>
+              <Button className="rounded-full px-6 w-full sm:w-auto shrink-0">Browse integration hub</Button>
             </motion.div>
 
-            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-12 grid gap-3 sm:gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
               {integrations.map((name) => (
                 <motion.div
                   key={name}
                   {...fadeUp}
-                  className="rounded-2xl border border-border/60 bg-background/70 px-4 py-5 text-center text-sm font-semibold text-muted-foreground hover:text-foreground hover:border-primary/30 transition-all"
+                  className="rounded-2xl border border-border/60 bg-background/70 px-4 py-5 text-center text-sm font-semibold text-muted-foreground hover:text-foreground hover:border-primary/30 transition-all cursor-pointer"
                 >
                   {name}
                 </motion.div>
               ))}
             </div>
 
-            <div className="mt-12 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="mt-12 grid gap-6 grid-cols-1 lg:grid-cols-[1.1fr_0.9fr]">
               <motion.div {...fadeUp} className="gradient-border rounded-3xl">
                 <div className="rounded-3xl bg-card/90 p-8">
                   <h3 className="text-2xl font-semibold">Integration builder</h3>
@@ -394,7 +394,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="pricing" className="py-24">
+        <section id="pricing" className="py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div {...fadeUp} className="text-center">
               <p className="text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
@@ -408,7 +408,7 @@ export default function Home() {
               </p>
             </motion.div>
 
-            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            <div className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {pricing.map((plan) => (
                 <motion.div
                   key={plan.name}
@@ -453,7 +453,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="faq" className="py-24 bg-secondary/30">
+        <section id="faq" className="py-16 sm:py-24 bg-secondary/30">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <motion.div {...fadeUp} className="text-center">
               <p className="text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
@@ -463,12 +463,12 @@ export default function Home() {
                 Answers for builders
               </h2>
             </motion.div>
-            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            <div className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {faqs.map((faq) => (
                 <motion.div
                   key={faq.q}
                   {...fadeUp}
-                  className="rounded-3xl border border-border/60 bg-background/80 p-6"
+                  className="rounded-3xl border border-border/60 bg-background/80 p-6 cursor-default"
                 >
                   <h3 className="text-lg font-semibold">{faq.q}</h3>
                   <p className="mt-3 text-sm text-muted-foreground">{faq.a}</p>
@@ -478,13 +478,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-24">
+        <section className="py-16 sm:py-24">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <motion.div
               {...fadeUp}
               className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-primary/15 via-background to-amber-200/30 p-12 text-center"
             >
-              <div className="absolute -top-20 right-0 h-56 w-56 rounded-full bg-primary/20 blur-[80px]" />
+              <div className="absolute -top-20 right-0 h-56 w-56 rounded-full bg-primary/20 blur-[80px] z-0 pointer-events-none" />
               <div className="relative">
                 <p className="text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
                   Ready to launch?
@@ -525,10 +525,10 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
-            <a href="#features" className="hover:text-foreground">Features</a>
-            <a href="#integrations" className="hover:text-foreground">Integrations</a>
-            <a href="#pricing" className="hover:text-foreground">Pricing</a>
-            <a href="#faq" className="hover:text-foreground">FAQ</a>
+            <a href="#features" className="hover:text-foreground cursor-pointer">Features</a>
+            <a href="#integrations" className="hover:text-foreground cursor-pointer">Integrations</a>
+            <a href="#pricing" className="hover:text-foreground cursor-pointer">Pricing</a>
+            <a href="#faq" className="hover:text-foreground cursor-pointer">FAQ</a>
           </div>
         </div>
       </footer>

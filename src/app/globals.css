@@ -167,15 +167,24 @@
   animation: marquee 30s linear infinite;
 }
 
-/* Glassmorphism utility */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-float,
+  .animate-float-delayed,
+  .animate-pulse-glow {
+    animation: none;
+  }
+}
+
+/* Glassmorphism utility - navbar scroll state */
 .glass {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(252, 251, 248, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
 
 .dark .glass {
-  background: rgba(11, 16, 22, 0.7);
+  background: rgba(5, 7, 10, 0.85);
 }
 
 /* Gradient text */
