@@ -24,7 +24,7 @@ import { Button } from "@/components/ui/button";
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" },
+  transition: { duration: 0.6, ease: "easeOut" as const },
   viewport: { once: true },
 };
 
