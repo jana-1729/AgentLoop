@@ -3,13 +3,14 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
-import { Moon, Sun, Menu, X, Sparkles } from "lucide-react";
+import { Moon, Sun, Menu, X, HeartPulse } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "Features", href: "#features" },
-  { label: "Studio", href: "#studio" },
-  { label: "Integrations", href: "#integrations" },
+  { label: "How it works", href: "#how" },
+  { label: "Use cases", href: "#use-cases" },
+  { label: "Channels", href: "#channels" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -75,7 +76,7 @@ export default function Navbar() {
           <div className="flex h-16 items-center justify-between">
             <a href="#" className="flex items-center gap-2 group cursor-pointer">
               <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground transition-transform group-hover:scale-110">
-                <Sparkles className="h-5 w-5" />
+                <HeartPulse className="h-5 w-5" />
                 <div className="absolute inset-0 rounded-xl bg-primary/30 blur-lg transition-opacity opacity-0 group-hover:opacity-100" />
               </div>
               <span className="text-xl font-bold tracking-tight">
@@ -131,7 +132,7 @@ export default function Navbar() {
               )}
 
               <Button className="hidden sm:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5 h-9 font-semibold shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all">
-                Get Early Access
+                Join the pilot
               </Button>
 
               <Button
@@ -167,7 +168,7 @@ export default function Navbar() {
                   ))}
                   <div className="pt-2 px-4">
                     <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full h-10 font-semibold shadow-lg shadow-primary/25">
-                      Get Early Access
+                      Join the pilot
                     </Button>
                   </div>
                 </div>

@@ -3,22 +3,18 @@
 import { motion } from "framer-motion";
 
 const logos: string[] = [
-  "Salesforce",
-  "HubSpot",
-  "Stripe",
-  "BigQuery",
-  "Slack",
-  "Databricks",
-  "Snowflake",
-  "Jira",
-  "GitHub",
-  "Zendesk",
-  "Intercom",
-  "Notion",
-  "Airtable",
-  "Twilio",
-  "SendGrid",
-  "Segment",
+  "Swiggy Food",
+  "Instamart",
+  "Dineout",
+  "Swiggy MCP",
+  "OAuth 2.1",
+  "Google Fit",
+  "Apple Health",
+  "Glucometer Sync",
+  "IFCT Food DB",
+  "Amazon Bedrock",
+  "AWS AgentCore",
+  "WhatsApp",
 ];
 
 function LogoItem({ name }: { name: string }) {
@@ -42,7 +38,7 @@ export default function LogosBar() {
         className="text-center mb-8"
       >
         <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest">
-          Integrations your customers already trust
+          Powered by Swiggy&apos;s AI commerce stack
         </p>
       </motion.div>
 
