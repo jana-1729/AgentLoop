@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const sora = Sora({
@@ -31,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${sora.variable} antialiased font-sans`}>
+       <Analytics/>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
