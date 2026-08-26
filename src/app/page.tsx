@@ -522,6 +522,7 @@ export default function Home() {
             </div>
             <p className="mt-2 text-sm text-muted-foreground max-w-md">
               The agentic integration fabric for modern SaaS teams.
+              <br />
               Contact : janarthanans.in@gmail.com
             </p>
           </div>
