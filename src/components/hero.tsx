@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Play, HeartPulse, Target, Utensils, ShieldCheck } from "lucide-react";
+import { ArrowRight, Play, Sparkles, GitBranch, ArrowLeftRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -26,8 +26,8 @@ export default function Hero() {
             transition={{ duration: 0.5, ease: "easeOut" as const }}
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-8">
-              <HeartPulse className="h-3.5 w-3.5" />
-              <span>Health Commerce OS · Powered by Swiggy MCP</span>
+              <Sparkles className="h-3.5 w-3.5" />
+              <span>Agentic Integration Fabric</span>
             </div>
           </motion.div>
 
@@ -37,11 +37,11 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" as const }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] max-w-4xl"
           >
-            Turn every food &amp;
+            Orchestrate your
             <br />
-            grocery order into a
+            product&apos;s integrations
             <br />
-            health win with <span className="gradient-text">AgentLoop</span>
+            with <span className="gradient-text">AgentLoop</span>
           </motion.h1>
 
           <motion.p
@@ -50,10 +50,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" as const }}
             className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed"
           >
-            AgentLoop sits between you and Swiggy, Instamart &amp; Dineout. Set a
-            health goal—diabetes, weight, heart—and every order is scored,
-            corrected, and delivered on target. India&apos;s first agentic health
-            commerce OS.
+            Design resilient workflows, connect to the tools your customers
+            already use, and monitor every run with precision. AgentLoop gives
+            your SaaS a secure, scalable integration layer in days—not months.
           </motion.p>
 
           <motion.div
@@ -63,7 +62,7 @@ export default function Hero() {
             className="mt-10 flex flex-col sm:flex-row items-center gap-4"
           >
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 h-12 text-base font-semibold shadow-xl shadow-primary/30 hover:shadow-primary/50 hover:scale-[1.03] transition-all duration-300 group">
-              Join the pilot
+              Launch a Workflow
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
@@ -71,7 +70,7 @@ export default function Hero() {
               className="rounded-full px-8 h-12 text-base font-semibold border-border hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group"
             >
               <Play className="mr-2 h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
-              See how it works
+              See the Studio
             </Button>
           </motion.div>
 
@@ -90,7 +89,7 @@ export default function Hero() {
                     <div className="w-3 h-3 rounded-full bg-emerald-400/80" />
                   </div>
                   <span className="text-xs text-muted-foreground ml-2 font-mono">
-                    agentloop.order
+                    agentloop.flow
                   </span>
                 </div>
                 <div className="font-mono text-sm space-y-2">
@@ -100,11 +99,11 @@ export default function Hero() {
                     transition={{ delay: 0.8 }}
                     className="flex items-center gap-3"
                   >
-                    <Target className="h-4 w-4 text-amber-400 shrink-0" />
+                    <Sparkles className="h-4 w-4 text-amber-400 shrink-0" />
                     <span className="text-muted-foreground">
-                      <span className="text-primary">goal</span>
+                      <span className="text-primary">trigger</span>
                       <span className="text-foreground">(</span>
-                      <span className="text-emerald-400">&quot;keep sugar &lt; 140 mg/dL&quot;</span>
+                      <span className="text-emerald-400">&quot;hubspot.contact.created&quot;</span>
                       <span className="text-foreground">)</span>
                     </span>
                   </motion.div>
@@ -114,11 +113,11 @@ export default function Hero() {
                     transition={{ delay: 1.0 }}
                     className="flex items-center gap-3 pl-6"
                   >
-                    <Utensils className="h-4 w-4 text-sky-400 shrink-0" />
+                    <GitBranch className="h-4 w-4 text-sky-400 shrink-0" />
                     <span className="text-muted-foreground">
-                      <span className="text-primary">.order</span>
+                      <span className="text-primary">.enrich</span>
                       <span className="text-foreground">(</span>
-                      <span className="text-emerald-400">&quot;lunch, high-protein&quot;</span>
+                      <span className="text-emerald-400">&quot;score &gt; 80&quot;</span>
                       <span className="text-foreground">)</span>
                     </span>
                   </motion.div>
@@ -128,11 +127,11 @@ export default function Hero() {
                     transition={{ delay: 1.2 }}
                     className="flex items-center gap-3 pl-6"
                   >
-                    <ShieldCheck className="h-4 w-4 text-teal-300 shrink-0" />
+                    <ArrowLeftRight className="h-4 w-4 text-teal-300 shrink-0" />
                     <span className="text-muted-foreground">
-                      <span className="text-primary">.guard</span>
+                      <span className="text-primary">.sync</span>
                       <span className="text-foreground">(</span>
-                      <span className="text-emerald-400">&quot;92g carb → swap brown rice&quot;</span>
+                      <span className="text-emerald-400">&quot;hubspot → slack&quot;</span>
                       <span className="text-foreground">)</span>
                     </span>
                   </motion.div>
@@ -146,7 +145,7 @@ export default function Hero() {
                     <span className="text-muted-foreground">
                       <span className="text-primary">.deliver</span>
                       <span className="text-foreground">()</span>
-                      <span className="text-emerald-400 ml-3">✓ 41g carb</span>
+                      <span className="text-emerald-400 ml-3">✓ 1.8s</span>
                     </span>
                   </motion.div>
                 </div>
@@ -161,10 +160,10 @@ export default function Hero() {
             className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-12"
           >
             {[
-              { value: "101M", label: "Diabetics in India" },
-              { value: "40k+", label: "Grocery SKUs scored" },
-              { value: "3-in-1", label: "Food · Grocery · Dining" },
-              { value: "24/7", label: "Autopilot ordering" },
+              { value: "600+", label: "Integrations" },
+              { value: "99.99%", label: "Workflow SLA" },
+              { value: "80M+", label: "Daily Tasks" },
+              { value: "<400ms", label: "Median Latency" },
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold gradient-text">

@@ -10,15 +10,15 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "AgentLoop — India's Health Commerce OS",
+  title: "AgentLoop — Orchestrate Agentic Integrations",
   description:
-    "AgentLoop turns every Swiggy, Instamart & Dineout order into a health decision. Set a goal—diabetes, weight, heart—and every order is scored, corrected, and delivered on target. Powered by Swiggy MCP.",
+    "AgentLoop is the integration fabric for agentic workflows. Design, connect, and scale reliable automations across your stack with built-in governance.",
   keywords: [
-    "health commerce",
-    "diabetes food ordering",
-    "Swiggy MCP",
-    "agentic ordering",
-    "healthy grocery autopilot",
+    "agentic workflows",
+    "integration platform",
+    "workflow automation",
+    "SaaS infrastructure",
+    "embedded integrations",
     "AgentLoop",
   ],
 };
